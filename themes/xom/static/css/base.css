@@ -1,11 +1,22 @@
+/* maximum container width and elements inside */
+
 body, img {
-	max-width: 800px;
+	max-width: 720px;
 	margin-right: auto;
 	margin-left: auto;
 	padding-left: 1.5em;
 	padding-right: 1.5em;
 }
 
+p {
+	font-size: 1.2em;
+	/* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+	font-family: 'Albert Sans', sans-serif;
+	/* font-family: 'Montserrat', sans-serif; */
+	/* font-family: 'Open Sans', sans-serif; */
+}
+
+/* reset list style */
 li {
 	list-style-type: none;
 }
@@ -14,29 +25,30 @@ ol, ul {
 	padding: 0;
 }
 
+/* header and nav styling */
+
+
+header > h1 {
+	font-size: 1.5em;
+}
+
 nav {
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 }
 
-nav > ul {
-	display: flex;
-	flex-wrap: wrap;
-
+nav > ul > li {
+	display: inline-flex;
 }
-
-nav > ul > li > a {
-	margin-bottom: 10px; /* Optional: Add margin between items */
-	padding: 1em;
-	background-color: rgb(0, 0, 0);
-	color: rgb(255, 255, 255);
-	margin-right: 0.5em;
-  }
 
 nav > ul > li > a {
 	text-decoration: none;
 	color: rgb(255, 255, 255);
-}
+	background-color: rgb(0, 0, 0);
+	padding: 1em;
+	margin-right: 0.5em;
+	margin-bottom: 0.5em;
+  }
 
 nav > ul > li:hover a {
 	background-color: white;
@@ -49,7 +61,8 @@ h2 > a, h1 > a {
 }
 
 h2 > a:hover {
-	text-decoration: underline;
+	background-color: black;
+	color: white;
 }
 
 header > h2 {
@@ -58,4 +71,11 @@ header > h2 {
 
 #about {
 	font-style: normal;
+}
+
+/* articles styling */
+.article-break {
+	height: 1px;
+	background-color: rgb(66, 66, 66);
+	border: none;
 }
