@@ -17,6 +17,8 @@ That's a very simple advise, sit down and learn, but I'm sure not many people ab
 
 With rise of short content from TikTok, attention span became shorter, and majority of us are with or without conscience are consuming this short content which in turn shorten our attention span by a lot. 
 
+![first screenshot](./images/screenshot-first.png)
+
 Sitting down and learning might not be a popular method, but it's a proven one. Take a an hour or so each day, step by step and before we know it, we already doing better than we are before. 
 
 Try it!!
