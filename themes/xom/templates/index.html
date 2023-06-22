@@ -1,13 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
 <section id="content">
-    <div class="index-content">
-        {% for p in pages %}
-        {% if p.index %}
-        {{p.content}}
-        {% endif %}
-        {% endfor %}
-    </div>    
 {% block content_title %}
 <h2>Writing sorted by dates</h2>
 <hr>

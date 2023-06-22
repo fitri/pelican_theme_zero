@@ -79,3 +79,12 @@ header > h2 {
 	background-color: rgb(66, 66, 66);
 	border: none;
 }
+
+.index-content > h2 {
+	margin-bottom: -0.5em;
+}
+
+/* footer */
+time {
+	font-size: 0.85em;
+}

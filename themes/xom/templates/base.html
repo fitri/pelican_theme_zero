@@ -41,6 +41,13 @@
         <header>
                 <h1>| <a href="{{ SITEURL }}/">{{ SITENAME }}{% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
         </header>
+        <div class="index-content">
+          {% for p in pages %}
+          {% if p.index %}
+          {{p.content}}
+          {% endif %}
+          {% endfor %}
+      </div>    
         <nav><ul>
         {% for title, link in MENUITEMS %}
             <li><a href="{{ link }}">{{ title }}</a></li>
