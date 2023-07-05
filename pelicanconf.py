@@ -1,7 +1,7 @@
 AUTHOR = 'Fitri Rahim'
 SITENAME = 'Fitri Rahim'
 SITEURL = '' #only include when deploy
-THEME = './themes/xom'
+THEME = './themes/zero'
 
 PATH = 'content'
 
