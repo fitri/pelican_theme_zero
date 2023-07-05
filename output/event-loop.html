@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Fitri Rahim - Understanding Event Loop in Python</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/theme/css/base.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Albert+Sans&family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+
+
+
+
+    <meta name="tags" content="programming" />
+    <meta name="tags" content="event" />
+
+</head>
+
+<body>
+        <header>
+                <h1 class="underline text-6xl">| <a href="/">Fitri Rahim</a></h1>
+                <!-- <script type="module" src="../static/js/main.js"></script> -->
+                <script src="https://cdn.tailwindcss.com"></script>
+        </header>
+        <div class="index-content">
+          <h3>Hi! I'm Fitri</h3>
+<p>Professionally I'm an engineer working in R&amp;D team specializing in developing and maintaining software infrastructure used in developing silicon product - Specifically CPU and chipset.</p>
+<p>Off hours I'm either spend my time trying new tech stack, gaming or do light reading on physics. </p>
+<h2>Explore topics</h2>
+      </div>    
+        <nav><ul>
+            <li><a href="/pages/index-html.html">index-html</a></li>
+            <li><a href="/category/blogging.html">Blogging</a></li>
+            <li class="active"><a href="/category/javascript.html">JavaScript</a></li>
+            <li><a href="/category/python.html">Python</a></li>
+        </ul></nav>
+        <main>
+  <header>
+    <h1 class="entry-title">
+      <a href="/event-loop.html" rel="bookmark"
+         title="Permalink to Understanding Event Loop in Python">Understanding Event Loop in Python</a></h1>
+ 
+  </header>
+  <footer class="post-info">
+    <time class="published" datetime="2021-12-03T10:20:00+08:00">
+      2021, December 03
+    </time>
+    <time class="modified" datetime="2021-12-05T19:30:00+08:00">
+      2021, December 05
+    </time>
+    <address class="vcard author">
+      By           <a class="url fn" href="/author/fitri-rahim.html">Fitri Rahim</a>
+    </address>
+    <div class="category">
+        Category: <a href="/category/javascript.html">JavaScript</a>
+    </div>
+    <div class="tags">
+        Tags:
+            <a href="/tag/programming.html">programming</a>
+            <a href="/tag/event.html">event</a>
+    </div>
+  </footer>
+  <article>
+    <p>Event loop is the important component of the asyncrhronoous concept in Python. To understand how the async work in Python we first need to look at event loop which is the heart of the async concept.</p>
+<p>You can imagine the event loop just as a big while loop continously checking the input and output and take in the input when available then proceed looping if there's no output available at the time it will skip until the output is ready then it will output the result.</p>
+<h2>Understanding the sequences</h2>
+<p>Lets try to visualize this with the sequences below:</p>
+<ul>
+<li>Event loop start</li>
+<li>checking for input</li>
+<li>checking for output</li>
+<li>checking for input</li>
+<li>Input available take it and sent for processing</li>
+<li>checking for output</li>
+<li>checking for input</li>
+<li>checking for output</li>
+<li>checking for input</li>
+<li>Input I2 available - sent for processing</li>
+<li>checking for output</li>
+<li>Output O2 available - sent for display</li>
+<li>checking for input</li>
+<li>checking for output </li>
+<li>Output I1 available - sent for display</li>
+<li>continues loop until stop</li>
+</ul>
+<p>From the above we can see, even the input I1 was taken first, but since the processing still ongoing, it will not wait for the I1 to return the result, instead it will continue looping for input and output until it got I2 which sent for processing and ready earlier than I1, thus the result was return immedietly before the I1, and only when I1 finished processing it return the result.</p>
+<p>The input processing can be anything, either sleep, accessing disk, database, or even http requests. </p>
+<p>In case of HTTP requests, the loop will not wait for the requests to process first before taking another requests, it will continue taking requests after request and only return the result when the processing finish. Of course all these happening real fast as Python executing.</p>
+<p>This is why it was called as non-blocking IO process, the output for the previous request will not hinder the new request made to the program.</p>
+  </article>
+        </main>
+        <footer>
+                <address id="about" class="vcard body">
+                  All right reserve and original writing by Fitri Rahim
+                </address><!-- /#about -->
+        </footer>
+</body>
+</html>
