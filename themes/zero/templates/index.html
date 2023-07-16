@@ -1,8 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
+<div class="w-8/12 mx-auto">
 <section id="content">
 {% block content_title %}
-<h2>Writing by dates</h2>
+<h2 class="font-bold pt-2.5 pb-2.5">Writing by dates</h2>
 <hr>
 {% endblock %}
 
@@ -19,6 +20,7 @@
         </li>
 {% endfor %}
 </ol><!-- /#posts-list -->
+</div>
 {% if articles_page.has_other_pages() %}
     {% include 'pagination.html' %}
 {% endif %}

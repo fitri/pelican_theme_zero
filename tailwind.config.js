@@ -5,7 +5,14 @@ module.exports = {
     extend: {
       fontFamily: {
         custom: ['Montserrat', 'sans-serif']
-      }
+      },
+      fontWeight: {
+        regular: 400,
+        medium: 500,
+        semibold: 600,
+        extrabold:800,
+        black:900
+        }
     }
   },
   plugins: []
