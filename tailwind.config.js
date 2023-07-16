@@ -12,9 +12,17 @@ module.exports = {
         semibold: 600,
         extrabold:800,
         black:900
+        },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            'h1': {
+              '@apply mr-5': {},
+            }
+          }
         }
+      })
     }
   },
   plugins: []
 };
-

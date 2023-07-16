@@ -12,7 +12,7 @@
         <li>
             <article class="flex justify-between py-2.5">
                 <header class="flex-1"> <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
-                <footer class="flex-none ml-10">
+                <footer class="flex-none ml-10 text-zinc-500">
                     <time class="published" datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time>
                 </footer><!-- /.post-info -->
             </article>
