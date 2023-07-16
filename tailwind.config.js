@@ -2,8 +2,12 @@
 module.exports = {
   content: ["./themes/zero/templates/*.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        custom: ['Montserrat', 'sans-serif']
+      }
+    }
   },
-  plugins: [],
-}
+  plugins: []
+};
 
