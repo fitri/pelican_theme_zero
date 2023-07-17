@@ -4,11 +4,27 @@
 
 
 @layer base {
+	h1 {
+		@apply text-2xl my-3.5;
+	}
+	h2 {
+		@apply text-xl
+	}
 	h3 {
-		@apply text-blue-400 mb-3;
+		@apply text-lg;
+	}
+	p {
+		@apply pb-2 text-sm;
 	}
 
-	p {
-		@apply pb-2
+	article > ol > li {
+		@apply my-2 mx-4 list-disc;
 	}
 }
+
+@layer base {
+	body > main > div > header > h1 {
+		@apply text-blue-800;
+	}
+}
+

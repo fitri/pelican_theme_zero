@@ -5,11 +5,16 @@ Tags: impostor syndrome, self-doubt, personal experiences
 Slug: navigating-impostor-syndrome-overcoming-self-doubt
 Authors: Fitri Rahim
 
+## The Validation
+
 ### Introduction
 In the programming world, where innovation and expertise are highly valued, many individuals experience a common psychological phenomenon known as Impostor Syndrome. This internal struggle is characterized by self-doubt, fear of being exposed as a fraud, and the belief that one's achievements are merely a result of luck or deception. Impostor Syndrome can hinder personal growth, impede career advancement, and impact mental well-being. However, by understanding and addressing this phenomenon, programmers can navigate Impostor Syndrome and unlock their full potential.
 
 ### Understanding Impostor Syndrome
 Impostor Syndrome affects individuals across various professions, but it can be particularly prevalent in the programming community. As technology rapidly evolves and new skills are constantly in demand, programmers may feel overwhelmed by the sheer breadth of knowledge they need to acquire. This leads to a persistent fear of not being skilled or knowledgeable enough, despite evidence of their competence.
+
+img here
+![test](./images/test.png)
 
 ### Causes and Manifestations
 Impostor Syndrome stems from various sources, including high expectations, fear of failure, perfectionism, and social comparison. Programmers often set high standards for themselves, striving for perfection in their code and solutions. However, this pursuit of excellence can become a double-edged sword, amplifying self-doubt and fueling the belief that any mistake or knowledge gap confirms their impostor status. Additionally, comparing oneself to accomplished peers or industry experts can create an unwarranted sense of inferiority.
