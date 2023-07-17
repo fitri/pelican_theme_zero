@@ -16,6 +16,13 @@ Impostor Syndrome affects individuals across various professions, but it can be 
 img here
 ![test](./images/test.png)
 
+testing code 
+
+```
+import printing
+printing('testing')
+```
+
 ### Causes and Manifestations
 Impostor Syndrome stems from various sources, including high expectations, fear of failure, perfectionism, and social comparison. Programmers often set high standards for themselves, striving for perfection in their code and solutions. However, this pursuit of excellence can become a double-edged sword, amplifying self-doubt and fueling the belief that any mistake or knowledge gap confirms their impostor status. Additionally, comparing oneself to accomplished peers or industry experts can create an unwarranted sense of inferiority.
 
