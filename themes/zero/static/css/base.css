@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+	h3 {
+		@apply text-blue-400 mb-3;
+	}
+
+	p {
+		@apply pb-2
+	}
+}
