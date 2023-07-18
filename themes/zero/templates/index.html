@@ -2,20 +2,20 @@
 {% block content %}
 <section id="content">
 {% block content_title %}
-<h2 class="font-bold pt-2.5 pb-2.5">Writing by dates</h2>
+<h2>Writing by dates</h2>
 <hr>
 {% endblock %}
 
-<ol id="post-list">
+<ol id="post-list" class="list-none p-0">
 {% for article in articles_page.object_list %}
         <li>
             <article class="flex justify-between py-2.5">
-                <header class="flex-1"> <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
+                <header class="flex-1"> <h2 class="entry-title m-0"><a class="no-underline" href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
                 <footer class="flex-none ml-10 text-zinc-500">
                     <time class="published" datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time>
                 </footer><!-- /.post-info -->
             </article>
-            <hr class="article-break">
+            <hr class="article-break my-4">
         </li>
 {% endfor %}
 </ol><!-- /#posts-list -->
