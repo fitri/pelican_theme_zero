@@ -17,13 +17,13 @@
                   {% if SITEURL %}
                   <link href="./style.css" rel="stylesheet">
                   {% else %}
-                  <script type="module" src="{{ SITEURL }}/theme/js/main.js"></script>
+                  <script type="module" src="/theme/js/main.js"></script>
                   {% endif %}
                   
                   <link rel="preconnect" href="https://fonts.googleapis.com">
                   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
                   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800;900&display=swap" rel="stylesheet">
-                  <h1 class="pt-8 text-lg md:text-xl lg:text-2xl"><a href="{{ SITEURL }}/">{{ SITENAME }}{% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
+                  <h1 class="pt-8 text-lg md:text-xl lg:text-2xl"><a href="/">{{ SITENAME }}{% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
           </header>
           <div class="index-content">
             {% for p in pages %}
@@ -39,13 +39,13 @@
               {% endfor %}
               {% if DISPLAY_PAGES_ON_MENU %}
                 {% for p in pages %}
-                  <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+                  <li{% if p == page %} class="active"{% endif %}><a href="/{{ p.url }}">{{ p.title }}</a></li>
                 {% endfor %}
               {% endif %}
               {% if DISPLAY_CATEGORIES_ON_MENU %}
                 {% for cat, null in categories %}
                   <div class="mr-2 mb-2 p-4 bg-black">
-                    <li class="m-0" {% if cat == category %}{% endif %}><a class="text-white no-underline" href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+                    <li class="m-0" {% if cat == category %}{% endif %}><a class="text-white no-underline" href="/{{ cat.url }}">{{ cat }}</a></li>
                   </div>
                 {% endfor %}
               {% endif %}
