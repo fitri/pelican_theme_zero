@@ -1,1 +1,1 @@
-import '../css/base.css'
+import 'https://zero-6tq.pages.dev/css/base.css'
