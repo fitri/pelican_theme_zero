@@ -1,6 +1,6 @@
 AUTHOR = 'Fitri Rahim'
 SITENAME = 'Fitri Rahim'
-SITEURL = '' #only include when deploy
+SITEURL = '' #overwrite with command: pelican content --SITEURL "siteaddress"
 THEME = './themes/zero'
 
 PATH = 'content'
