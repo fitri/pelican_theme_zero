@@ -1,6 +1,6 @@
 AUTHOR = 'Fitri Rahim'
 SITENAME = 'Fitri Rahim'
-SITEURL = 'fitri.me' #overwrite with command: pelican content --SITEURL "siteaddress"
+SITEURL = 'zero-6tq.pages.dev' #overwrite with production domain
 THEME = './themes/zero'
 
 PATH = 'content'
