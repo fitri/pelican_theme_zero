@@ -9,7 +9,7 @@
 </head>
 
 <body class="pt-8 font-custom">
-        <div class="w-9/12 mb-10 mx-auto">
+        <div class="container mx-auto">
         <header>
                 <h1 class="font-medium"><a href="{{ SITEURL }}/">{{ SITENAME }}{% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
                 <script type="module" src="{{ SITEURL }}/theme/js/main.js"></script>
@@ -17,7 +17,6 @@
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
                 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800;900&display=swap" rel="stylesheet">
         </header>
-        </div>
         <div class="index-content">
           {% for p in pages %}
           {% if p.index %}
@@ -25,7 +24,6 @@
           {% endif %}
           {% endfor %}
       </div>    
-        <div class="w-8/12 mx-auto">
         <nav>
           <ul class="inline-flex flex-wrap">
             {% for title, link in MENUITEMS %}
@@ -45,15 +43,15 @@
             {% endif %}
           </ul>
         </nav>
-        </div>
         <main>
         {% block content %}
         {% endblock %}
         </main>
         <footer class="px-8 py-8 ">
-                <div class="flex justify-center">
+                <div class="text-center">
                   Original writing by Fitri Rahim
                 </div>
         </footer>
+      </div>
 </body>
 </html>
