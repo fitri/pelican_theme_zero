@@ -44,8 +44,8 @@
               {% endif %}
               {% if DISPLAY_CATEGORIES_ON_MENU %}
                 {% for cat, null in categories %}
-                  <div class="mr-2 mb-2 p-2 bg-stone-950">
-                    <li{% if cat == category %} class="active"{% endif %}><a class="text-white no-underline" href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+                  <div class="mr-2 mb-2 p-4 bg-black">
+                    <li class="m-0" {% if cat == category %}{% endif %}><a class="text-white no-underline" href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
                   </div>
                 {% endfor %}
               {% endif %}
