@@ -1,6 +1,6 @@
 AUTHOR = 'Fitri Rahim'
 SITENAME = 'Fitri Rahim'
-SITEURL = 'zero-6tq.pages.dev' #only include when deploy
+SITEURL = '' #only include when deploy
 THEME = './themes/zero'
 
 PATH = 'content'
