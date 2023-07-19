@@ -32,8 +32,9 @@
   <article">
     {{ article.content }}
   </article>
-  <footer class="post-info">
-    <time class="published" datetime="{{ article.date.isoformat() }}">
+  <footer class="text-gray-400 flex inline-flex gap-x-1">
+    <p class="p-0 m-0">Published on </p>
+    <time datetime="{{ article.date.isoformat() }}">
       {{ article.locale_date }}
     </time>
   </footer>
