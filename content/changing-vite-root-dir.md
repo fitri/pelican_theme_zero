@@ -7,7 +7,7 @@ Authors: Fitri Rahim
 
 By default running Vite from npm command `npm run dev`, current dir will be serve as root of the application.
 
-There's cases where the current dir was not the root or where the index file live, for example this dir structure where `npm init` dir `project_dir` was the main project dir and the `src` was the deployment output folder.
+There's cases where the current dir was not the root or where the index file live, for example this dir structure where `npm init` dir `project_dir` was the main project dir and the subdir `src` was the deployment output folder.
 
 ```bash
 project_dir
