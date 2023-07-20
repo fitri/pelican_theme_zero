@@ -55,6 +55,9 @@ git reset HEAD thefiletorevert
 ### reset all files to the last commit -unstaged
 git reset HEAD
 
+### reset working dir to the last commit - discard all changes
+git reset --hard HEAD
+
 > git checkout is like switching to different version (like switching user concept in Linux), but git reset is discard by moving to another commit completely (like logout and login as new user concept in Linux). Only use git reset for unstage, for revert better options use git revert.
 
 ###  show differences after git add
