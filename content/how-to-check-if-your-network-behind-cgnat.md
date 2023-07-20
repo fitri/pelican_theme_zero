@@ -1,5 +1,5 @@
 Title: How to Check If Your Network Behind CGNAT
-Date: 2023-07-21
+Date: 2023-06-30
 Category: Network
 Tags: ip, ipv4, networking
 Slug: how-to-check-if-your-network-behind-cgnat
