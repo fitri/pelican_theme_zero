@@ -6,25 +6,21 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <link rel="icon" type="image/x-icon" href="/theme/other/favicon.png">
-        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
         {% endblock head %}
 </head>
 
 <body>
-          <div class="container px-4 lg:max-w-3xl min-w-[320px] mx-auto prose prose-a:no-underline prose-hr:my-0 prose-p:text-lg">
+          <div id="root" class="container px-4 lg:max-w-3xl min-w-[320px] mx-auto prose prose-a:no-underline prose-hr:my-0 prose-p:text-lg">
           <header>
-                  {% if SITEURL %}
-                  <link href="/style.css" rel="stylesheet">
-                  {% else %}
-                  <script type="module" src="/theme/js/main.js"></script>
-                  {% endif %}
-                  
-                  <link rel="preconnect" href="https://fonts.googleapis.com">
-                  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800;900&display=swap" rel="stylesheet">
-                  <h1 class="my-8 text-lg md:text-xl lg:text-2xl"><a href="/">{{ SITENAME }}{% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
+            {% if SITEURL %}
+            <link href="theme/css/style.css" rel="stylesheet">
+            {% else %}
+            <script type="module" src="/theme/js/main.js"></script>            
+            {% endif %}
+            <div class="flex items-baseline gap-x-2 my-8">
+              <h1 class="m-0 text-lg md:text-xl lg:text-2xl"><a href="/">{{ SITENAME }}{% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
+              <img src="/theme/other/favicon.png" class="m-0 max-h-[18px] md:max-h-[20] lg:max-h-[24px]">
+            </div>
           </header>
           <div class="index-content">
             {% for p in pages %}
