@@ -26,7 +26,6 @@ git config --global credential.helper cache
 ```
 
 
-
 ## Adding and Removing File
 
 ### add single file
@@ -43,7 +42,11 @@ git add .
 ```bash
 git rm thedirname/thefiletoremove
 ```
-
+### remove file from git index, use carefully
+```bash
+git rm -r --cache filename/orfolder 
+```
+> After the file/folder remove, add it to untracked list .gitignore else it will be added back once when running `git add` command. This is useful in case of miscommit file containing sensitive information such password or large file which not accepted by online repository.
 
 
 ## Staging and Commit
@@ -120,8 +123,8 @@ git commit --amend --no-edit
 
 ### backdated commit
 ```bash
-git commit --allow-empty --date="Sat Nov 14 14:00 2015 +0100"-m 
-'2 Dec commit'```
+git commit --allow-empty --date="Sat Nov 14 14:00 2015 +0100"-m '2 Dec commit'
+```
 
 
 
@@ -156,7 +159,6 @@ git revert HEAD
 ```bash
 git revert thegithashversioncommit
 ```
-
 
 
 ## Branching and Merging
@@ -210,7 +212,6 @@ git merge --abort
 ```bash
 git reset
 ```
-
 
 
 ## Remote Repository
