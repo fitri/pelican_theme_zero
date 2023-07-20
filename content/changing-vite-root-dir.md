@@ -5,7 +5,7 @@ Tags: tools, deployment, web
 Slug: change-vite-root-dir
 Authors: Fitri Rahim
 
-By default running Vite from npm command `npm run dev`, current dir will be serve as root of the application.
+By default running Vite from npm command `npm run dev`, current dir will be served as root of the application.
 
 There's cases where the current dir was not the root or where the index file live, for example this dir structure where `npm init` dir `project_dir` was the main project dir and the subdir `src` was the deployment output folder.
 
@@ -16,7 +16,7 @@ project_dir
         src/
             index.html
 ```
-For this cases to change the default serving root dir we can explicitly specify the root dir inside `vite.config.js`.
+In such cases, to change the default serving root dir we can explicitly specify the root dir inside `vite.config.js`.
 
 If the file didn't exist, create it and define the root dir inside.
 
