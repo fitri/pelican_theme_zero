@@ -8,6 +8,7 @@
         <link rel="icon" type="image/x-icon" href="/theme/other/favicon.png">
         {% endblock head %}
 </head>
+
 <body>
           <div id="root" class="container px-4 lg:max-w-3xl min-w-[320px] mx-auto prose prose-a:no-underline prose-hr:my-0 prose-p:text-lg">
           <header>
@@ -16,7 +17,7 @@
             {% else %}
             <script type="module" src="/theme/js/main.js"></script>            
             {% endif %}
-            <div class="my-8">
+            <div class="flex items-baseline gap-x-2 my-8">
               <h1 class="m-0 text-lg md:text-xl lg:text-2xl"><a href="/">{{ SITENAME }}{% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
             </div>
           </header>
@@ -29,6 +30,14 @@
         </div>    
           <nav>
             <ul class="inline-flex flex-wrap gap-2 p-0 list-none">
+              {% for title, link in MENUITEMS %}
+                  <li><a href="{{ link }}">{{ title }}</a></li>
+              {% endfor %}
+              {% if DISPLAY_PAGES_ON_MENU %}
+                {% for p in pages %}
+                  <li{% if p == page %} class="active"{% endif %}><a href="/{{ p.url }}">{{ p.title }}</a></li>
+                {% endfor %}
+              {% endif %}
               {% if DISPLAY_CATEGORIES_ON_MENU %}
                 {% for cat, null in categories %}
                   <div class="p-4 bg-black">
