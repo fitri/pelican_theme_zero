@@ -1,6 +1,6 @@
 AUTHOR = 'Fitri Rahim'
-SITENAME = 'Fitri Rahim'
-SITEURL = 'zero-6tq.pages.dev' #overwrite with production domain
+SITENAME = 'Fitri Rahim 👨🏽‍💻'
+SITEURL = 'fitri.me'
 THEME = './themes/zero'
 
 PATH = 'content'
